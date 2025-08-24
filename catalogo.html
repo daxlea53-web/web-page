@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daxlea - Catálogo</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #1a1a1a; /* Fondo oscuro moderno */
+            color: #e2e8f0; /* Color de texto claro */
+            scroll-behavior: smooth;
+        }
+
+        /* Estilos personalizados para el logo de texto */
+        .logo-text {
+            font-family: 'Times New Roman', serif;
+            font-size: 2.5rem; /* Tamaño de la fuente del logo */
+            font-weight: 700;
+            color: #e2e8f0;
+        }
+
+        /* Smooth Scroll for Navigation */
+        html {
+          scroll-behavior: smooth;
+        }
+
+        /* Modern button style */
+        .btn-modern {
+            background: linear-gradient(90deg, #107bee, #00c6ff);
+            transition: all 0.3s ease-in-out;
+            box-shadow: 0 4px 15px rgba(0, 198, 255, 0.3);
+        }
+        .btn-modern:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0, 198, 255, 0.5);
+        }
+
+        /* Modern card styling */
+        .card-modern {
+            background-color: #242424;
+            border: 1px solid #333;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+        .card-modern:hover {
+            transform: scale(1.02);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+        .product-image {
+            aspect-ratio: 3 / 4; /* Aspecto 3:4 para las imágenes de productos */
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-gray-200">
+
+    <!-- Header & Navigation -->
+    <header id="main-header" class="fixed w-full bg-gray-900 bg-opacity-70 backdrop-blur-md z-50 transition-all duration-300 shadow-xl">
+        <nav class="container mx-auto px-4 py-4 flex items-center justify-between">
+            <!-- Logo de texto, navega a la página principal -->
+            <a href="#" class="flex-shrink-0">
+                <span class="logo-text">DAXLEA</span>
+            </a>
+            <!-- Menu de navegación -->
+            <div class="flex items-center space-x-6 text-gray-400 font-medium tracking-wide">
+                <!-- Botón de "Inicio" que lleva a la página principal -->
+                <!-- Nota: si tu página de inicio está en un archivo llamado index.html, cambia href="#" por href="index.html" -->
+                <a href="index.html" class="hover:text-gray-100 transition duration-300">Inicio</a>
+                <a href="#anime" class="hover:text-gray-100 transition duration-300">Anime</a>
+                <a href="#vintage" class="hover:text-gray-100 transition duration-300">Vintage</a>
+                <a href="#casual" class="hover:text-gray-100 transition duration-300">Casual</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container mx-auto px-4 py-16">
+        <h1 class="text-5xl font-bold text-center text-white mt-12 mb-10 uppercase tracking-wide">Nuestras Colecciones</h1>
+
+        <!-- Anime Section -->
+        <section id="anime" class="py-12">
+            <h2 class="text-4xl font-bold text-center text-gray-100 mb-10 uppercase tracking-wide">Colección ANIME</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!--
+                COMENTARIO: Cómo agregar más productos a esta sección
+                Para añadir un nuevo producto, simplemente copia el siguiente bloque de código
+                y pégalo dentro de este <div>.
+
+                Asegúrate de cambiar:
+                1. La URL de la imagen en el atributo 'src' de la etiqueta <img>.
+                2. El texto alternativo de la imagen en el atributo 'alt'.
+                3. El nombre del producto en la etiqueta <h3>.
+                4. El precio del producto en la etiqueta <p>.
+                5. El enlace del botón "Comprar" en el atributo 'href' de la etiqueta <a>.
+                -->
+                <!-- Product Card 1 -->
+                <div class="rounded-2xl card-modern overflow-hidden">
+                    <img src="assets/coleccion/anime dadadan.jpg" alt="Camiseta Anime" class="w-full object-cover product-image transition-transform duration-300 group-hover:scale-105">
+                    <div class="p-4 text-center">
+                        <h3 class="text-lg font-semibold text-gray-50">Dandadan Anime</h3>
+                        <p class="text-gray-400 text-sm mt-1 mb-3">$12.99</p>
+                        <a href="#" class="inline-block btn-modern text-white font-bold py-2 px-6 rounded-full uppercase text-xs">Comprar</a>
+                    </div>
+                </div>
+                <!-- Product Card 2 -->
+                <div class="rounded-2xl card-modern overflow-hidden">
+                    <img src="assets/coleccion/paisaje anime.jpg" alt="Sudadera Anime" class="w-full object-cover product-image transition-transform duration-300 group-hover:scale-105">
+                    <div class="p-4 text-center">
+                        <h3 class="text-lg font-semibold text-gray-50">Paisaje anime</h3>
+                        <p class="text-gray-400 text-sm mt-1 mb-3">$12.99</p>
+                        <a href="#" class="inline-block btn-modern text-white font-bold py-2 px-6 rounded-full uppercase text-xs">Comprar</a>
+                    </div>
+                </div>
+                <div class="rounded-2xl card-modern overflow-hidden">
+                    <img src="assets/coleccion/vaporwave casual.jpg" alt="Pantalón Casual" class="w-full object-cover product-image transition-transform duration-300 group-hover:scale-105">
+                    <div class="p-4 text-center">
+                        <h3 class="text-lg font-semibold text-gray-50">Vaporwawe</h3>
+                        <p class="text-gray-400 text-sm mt-1 mb-3">$12.99</p>
+                        <a href="https://wa.me/584126120104" class="inline-block btn-modern text-white font-bold py-2 px-6 rounded-full uppercase text-xs">Comprar</a>
+                    </div>
+                </div>
+                <!-- Product Card 3 
+                <div class="rounded-2xl card-modern overflow-hidden">
+                    <img src="https://placehold.co/600x800/242424/e2e8f0?text=ANIME_TSHIRT_2" alt="Camiseta Anime" class="w-full object-cover product-image transition-transform duration-300 group-hover:scale-105">
+                    <div class="p-4 text-center">
+                        <h3 class="text-lg font-semibold text-gray-50">Camiseta "Guerrero Oni"</h3>
+                        <p class="text-gray-400 text-sm mt-1 mb-3">$25.00</p>
+                        <a href="#" class="inline-block btn-modern text-white font-bold py-2 px-6 rounded-full uppercase text-xs">Comprar</a>
+                    </div>
+                </div>-->
+                <!-- Product Card 4 
+                <div class="rounded-2xl card-modern overflow-hidden">
+                    <img src="https://placehold.co/600x800/242424/e2e8f0?text=ANIME_HAT" alt="Gorro Anime" class="w-full object-cover product-image transition-transform duration-300 group-hover:scale-105">
+                    <div class="p-4 text-center">
+                        <h3 class="text-lg font-semibold text-gray-50">Gorro "Spirit"</h3>
+                        <p class="text-gray-400 text-sm mt-1 mb-3">$18.00</p>
+                        <a href="#" class="inline-block btn-modern text-white font-bold py-2 px-6 rounded-full uppercase text-xs">Comprar</a>
+                    </div>
+                </div>-->
+            </div>
+        </section>
+        
+        <div class="border-t border-gray-700 my-12"></div>
+
+        <!-- Vintage Section -->
+        <section id="vintage" class="py-12">
+            <h2 class="text-4xl font-bold text-center text-gray-100 mb-10 uppercase tracking-wide">Colección VINTAGE</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                 <!--
+                COMENTARIO: Cómo agregar más productos a esta sección
+                Para añadir un nuevo producto, simplemente copia el siguiente bloque de código
+                y pégalo dentro de este <div>.
+
+                Asegúrate de cambiar:
+                1. La URL de la imagen en el atributo 'src' de la etiqueta <img>.
+                2. El texto alternativo de la imagen en el atributo 'alt'.
+                3. El nombre del producto en la etiqueta <h3>.
+                4. El precio del producto en la etiqueta <p>.
+                5. El enlace del botón "Comprar" en el atributo 'href' de la etiqueta <a>.
+                -->
+                <!-- Product Card 1 -->
+                <div class="rounded-2xl card-modern overflow-hidden">
+                    <img src="assets/coleccion/vintage dinero.jpg" alt="Chaqueta Vintage" class="w-full object-cover product-image transition-transform duration-300 group-hover:scale-105">
+                    <div class="p-4 text-center">
+                        <h3 class="text-lg font-semibold text-gray-50">Vintage Money Maker</h3>
+                        <p class="text-gray-400 text-sm mt-1 mb-3">$12.99</p>
+                        <a href="#" class="inline-block btn-modern text-white font-bold py-2 px-6 rounded-full uppercase text-xs">Comprar</a>
+                    </div>
+                </div>
+                <!-- Product Card 2 -->
+                <div class="rounded-2xl card-modern overflow-hidden">
+                    <img src="assets/coleccion/vintage olas.jpg" alt="Camisa Vintage" class="w-full object-cover product-image transition-transform duration-300 group-hover:scale-105">
+                    <div class="p-4 text-center">
+                        <h3 class="text-lg font-semibold text-gray-50">Vintage Japan Beach"</h3>
+                        <p class="text-gray-400 text-sm mt-1 mb-3">$12.99</p>
+                        <a href="#" class="inline-block btn-modern text-white font-bold py-2 px-6 rounded-full uppercase text-xs">Comprar</a>
+                    </div>
+                </div>
+                <!-- Product Card 3 -->
+                <div class="rounded-2xl card-modern overflow-hidden">
+                    <img src="assets/coleccion/vintage tokyo.jpg" alt="Pantalón Vintage" class="w-full object-cover product-image transition-transform duration-300 group-hover:scale-105">
+                    <div class="p-4 text-center">
+                        <h3 class="text-lg font-semibold text-gray-50">Vintage Tokyo"</h3>
+                        <p class="text-gray-400 text-sm mt-1 mb-3">$12.99</p>
+                        <a href="#" class="inline-block btn-modern text-white font-bold py-2 px-6 rounded-full uppercase text-xs">Comprar</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="border-t border-gray-700 my-12"></div>
+        
+        <!-- Casual Section -->
+        <section id="casual" class="py-12">
+            <h2 class="text-4xl font-bold text-center text-gray-100 mb-10 uppercase tracking-wide">Colección CASUAL</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                 <!--
+                COMENTARIO: Cómo agregar más productos a esta sección
+                Para añadir un nuevo producto, simplemente copia el siguiente bloque de código
+                y pégalo dentro de este <div>.
+
+                Asegúrate de cambiar:
+                1. La URL de la imagen en el atributo 'src' de la etiqueta <img>.
+                2. El texto alternativo de la imagen en el atributo 'alt'.
+                3. El nombre del producto en la etiqueta <h3>.
+                4. El precio del producto en la etiqueta <p>.
+                5. El enlace del botón "Comprar" en el atributo 'href' de la etiqueta <a>.
+                -->
+                <!-- Product Card 1 -->
+                <div class="rounded-2xl card-modern overflow-hidden">
+                    <img src="assets/coleccion/easye.jpg" alt="Camiseta Casual" class="w-full object-cover product-image transition-transform duration-300 group-hover:scale-105">
+                    <div class="p-4 text-center">
+                        <h3 class="text-lg font-semibold text-gray-50">Easy-E</h3>
+                        <p class="text-gray-400 text-sm mt-1 mb-3">$12.99</p>
+                        <a href="#" class="inline-block btn-modern text-white font-bold py-2 px-6 rounded-full uppercase text-xs">Comprar</a>
+                    </div>
+                </div>
+                <!-- Product Card 2 -->
+                <div class="rounded-2xl card-modern overflow-hidden">
+                    <img src="assets/coleccion/casual craneo.jpg" alt="Pantalón Casual" class="w-full object-cover product-image transition-transform duration-300 group-hover:scale-105">
+                    <div class="p-4 text-center">
+                        <h3 class="text-lg font-semibold text-gray-50">Skull</h3>
+                        <p class="text-gray-400 text-sm mt-1 mb-3">$12.99</p>
+                        <a href="#" class="inline-block btn-modern text-white font-bold py-2 px-6 rounded-full uppercase text-xs">Comprar</a>
+                    </div>
+                </div>
+                <!-- Product Card 3 -->
+                <div class="rounded-2xl card-modern overflow-hidden">
+                    <img src="assets/coleccion/casual girasol.jpg" alt="Shorts Casual" class="w-full object-cover product-image transition-transform duration-300 group-hover:scale-105">
+                    <div class="p-4 text-center">
+                        <h3 class="text-lg font-semibold text-gray-50">Sunflower</h3>
+                        <p class="text-gray-400 text-sm mt-1 mb-3">$12.99</p>
+                        <a href="#" class="inline-block btn-modern text-white font-bold py-2 px-6 rounded-full uppercase text-xs">Comprar</a>
+                    </div>
+                </div>
+                 <div class="rounded-2xl card-modern overflow-hidden">
+                    <img src="assets/coleccion/casual mazda.jpg" alt="Shorts Casual" class="w-full object-cover product-image transition-transform duration-300 group-hover:scale-105">
+                    <div class="p-4 text-center">
+                        <h3 class="text-lg font-semibold text-gray-50">Mazda</h3>
+                        <p class="text-gray-400 text-sm mt-1 mb-3">$12.99</p>
+                        <a href="#" class="inline-block btn-modern text-white font-bold py-2 px-6 rounded-full uppercase text-xs">Comprar</a>
+                    </div>
+                </div>
+                 <div class="rounded-2xl card-modern overflow-hidden">
+                    <img src="assets/coleccion/casual rosa.jpg" alt="Shorts Casual" class="w-full object-cover product-image transition-transform duration-300 group-hover:scale-105">
+                    <div class="p-4 text-center">
+                        <h3 class="text-lg font-semibold text-gray-50">Rose</h3>
+                        <p class="text-gray-400 text-sm mt-1 mb-3">$12.99</p>
+                        <a href="#" class="inline-block btn-modern text-white font-bold py-2 px-6 rounded-full uppercase text-xs">Comprar</a>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+
+        <!-- Botón grande para volver al inicio -->
+        <div class="text-center py-16">
+            <a href="index.html" class="inline-block bg-white text-gray-900 font-bold py-4 px-12 rounded-full uppercase text-sm tracking-wider hover:bg-gray-200 transition-colors duration-300">
+                Volver al inicio
+            </a>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-500 py-8 border-t border-gray-800">
+        <div class="container mx-auto px-4 text-center">
+            <p>&copy; 2025 Daxlea. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daxlea</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #1a1a1a; /* Fondo oscuro moderno */
+            color: #e2e8f0; /* Color de texto claro */
+            scroll-behavior: smooth;
+        }
+
+        /* Estilos personalizados para el logo de texto */
+        .logo-text {
+            font-family: 'Times New Roman', serif;
+            font-size: 2.5rem; /* Tamaño de la fuente del logo */
+            font-weight: 700;
+            color: #e2e8f0;
+        }
+        
+        /* Hero Section with a modern gradient overlay */
+        .hero-section {
+            background-image: linear-gradient(to bottom, rgba(26, 26, 26, 0.6), rgba(26, 26, 26, 0.9)), url('assets/header.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 90vh;
+            position: relative;
+        }
+        .hero-text {
+            text-shadow: 2px 2px 8px rgba(0,0,0,0.8);
+        }
+        
+        /* Smooth Scroll for Navigation */
+        html {
+          scroll-behavior: smooth;
+        }
+
+        /* Modern button style */
+        .btn-modern {
+            background: linear-gradient(90deg, #107bee, #00c6ff);
+            transition: all 0.3s ease-in-out;
+            box-shadow: 0 4px 15px rgba(0, 198, 255, 0.3);
+        }
+        .btn-modern:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0, 198, 255, 0.5);
+        }
+
+        /* Modern card styling */
+        .card-modern {
+            background-color: #242424;
+            border: 1px solid #333;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+        .card-modern:hover {
+            transform: scale(1.02);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Social media icons hover effect */
+        .icon-hover-effect:hover {
+            transform: scale(1.1);
+            color: #00c6ff; /* A different color for a modern feel */
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-gray-200">
+
+    <!-- Header & Navigation -->
+    <header id="main-header" class="fixed w-full bg-gray-900 bg-opacity-70 backdrop-blur-md z-50 transition-all duration-300 shadow-xl">
+        <nav class="container mx-auto px-4 py-4 flex items-center justify-between">
+            <!-- Logo de texto -->
+            <a href="#" class="flex-shrink-0">
+                <span class="logo-text">DAXLEA</span>
+            </a>
+
+            <!-- Menu -->
+            <div class="flex items-center space-x-6 text-gray-400 font-medium tracking-wide">
+                <a href="#catalogo" class="hover:text-gray-100 transition duration-300">Catálogo</a>
+                <a href="#personalizados" class="hover:text-gray-100 transition duration-300">Personalizados</a>
+                <a href="#contacto" class="hover:text-gray-100 transition duration-300">Contacto</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section flex items-center justify-center text-center">
+        <div class="container mx-auto px-4 relative z-10">
+            <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-4 uppercase hero-text">Ropa Personalizada con Actitud</h1>
+            <p class="text-base sm:text-lg text-gray-300 font-light mb-8 hero-text max-w-2xl mx-auto">
+                Desde camisetas con tipografía audaz hasta hoodies con estampados exclusivos, cada pieza está pensada para destacar en la calle, en redes y en tu día a día.
+            </p>
+            <a href="#catalogo" class="inline-block btn-modern text-white font-bold py-3 px-8 rounded-full transform hover:scale-105 shadow-lg uppercase tracking-wider">
+                Explora la Colección
+            </a>
+        </div>
+    </section>
+
+    <main class="container mx-auto px-4 py-8">
+        <!-- Catalog Section -->
+        <section id="catalogo" class="py-12">
+            <h2 class="text-4xl font-bold text-center text-gray-100 mb-10 uppercase tracking-wide">Catálogo</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Catalog Item 1: Línea Anime -->
+                <div class="rounded-2xl card-modern overflow-hidden">
+                    <img src="assets/anime.jpg" alt="Línea Anime" class="w-full h-96 object-cover object-top transition-transform duration-300 group-hover:scale-105">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold mb-2 text-gray-50">ANIME</h3>
+                        <p class="text-gray-400 text-sm">Diseños inspirados en el ANIME japones</p>
+                        <a href="catalogo.html#anime" class="mt-4 inline-block btn-modern text-white font-bold py-2 px-6 rounded-full uppercase text-xs">Ver más</a>
+                    </div>
+                </div>
+                <!-- Catalog Item 2: Línea Vintage -->
+                <div class="rounded-2xl card-modern overflow-hidden">
+                    <img src="assets/vintage.jpg" alt="Línea Vintage" class="w-full h-96 object-cover object-top transition-transform duration-300 group-hover:scale-105">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold mb-2 text-gray-50">VINTAGE</h3>
+                        <p class="text-gray-400 text-sm">Estilo retro con un toque moderno.</p>
+                        <a href="catalogo.html#vintage" class="mt-4 inline-block btn-modern text-white font-bold py-2 px-6 rounded-full uppercase text-xs">Ver más</a>
+                    </div>
+                </div>
+                <!-- Catalog Item 3: Línea Casual -->
+                <div class="rounded-2xl card-modern overflow-hidden">
+                    <img src="assets/casual.jpg" alt="Línea Casual" class="w-full h-96 object-cover object-top transition-transform duration-300 group-hover:scale-105">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold mb-2 text-gray-50">CASUAL</h3>
+                        <p class="text-gray-400 text-sm">Prendas cómodas y versátiles para el día a día.</p>
+                        <a href="catalogo.html#casual" class="mt-4 inline-block btn-modern text-white font-bold py-2 px-6 rounded-full uppercase text-xs">Ver más</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- New Personalized Designs Section -->
+        <section id="personalizados" class="py-12">
+            <h2 class="text-4xl font-bold text-center text-gray-100 mb-6 uppercase tracking-wide">Diseños Personalizados</h2>
+            <p class="text-center text-gray-400 mb-8 max-w-2xl mx-auto">
+                ¿Buscas algo único? Creamos prendas exclusivas solo para ti. Desde una sola unidad hasta una colección completa para tu marca.
+            </p>
+            <!-- Button to custom order form -->
+            <div class="text-center mb-12">
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSe3GnVvV9kgAfWWVlLvzvY_5YZsf4LHxSWePXed3B2QNkZ8KA/viewform?usp=sf_link" target="_blank" class="inline-block btn-modern text-white font-bold py-4 px-10 rounded-full transform hover:scale-105 shadow-lg uppercase tracking-wider">
+                    Solicita tu Diseño
+                </a>
+            </div>
+
+            <!-- Example Cards -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <div class="rounded-2xl card-modern overflow-hidden">
+                    <img src="assets/ejemplo 1.jpg" alt="Ejemplo de Diseño Personalizado" class="w-full h-48 object-cover object-center transition-transform duration-300 group-hover:scale-105">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2 text-gray-50">Unidades Exclusivas</h3>
+                        <p class="text-gray-400 text-sm">Creamos prendas únicas para eventos especiales, regalos o simplemente para destacar.</p>
+                    </div>
+                </div>
+                <div class="rounded-2xl card-modern overflow-hidden">
+                    <img src="assets/ejemplo 2.jpg" alt="Ejemplo de Colección Personalizada" class="w-full h-48 object-cover object-center transition-transform duration-300 group-hover:scale-105">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2 text-gray-50">Colecciones para Marcas</h3>
+                        <p class="text-gray-400 text-sm">Trabajamos contigo para desarrollar colecciones de ropa que reflejen la identidad de tu marca o negocio.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contacto" class="py-12">
+            <h2 class="text-4xl font-bold text-center text-gray-100 mb-10 uppercase tracking-wide">Contacto</h2>
+            <p class="text-center text-gray-400 mb-6 max-w-2xl mx-auto">
+                Síguenos en nuestras redes sociales para no perderte las últimas novedades, colecciones y promociones.
+            </p>
+            <!-- Social Media Icons -->
+            <div class="flex justify-center items-center space-x-8 mb-8 text-gray-400">
+                <a href="https://www.instagram.com/daxl.eavzla/" target="_blank" aria-label="Instagram" class="hover:text-pink-500 transition-transform duration-300 icon-hover-effect">
+                    <i class="fab fa-instagram text-4xl"></i>
+                </a>
+                <a href="#" target="_blank" aria-label="TikTok" class="hover:text-white transition-transform duration-300 icon-hover-effect">
+                    <i class="fab fa-tiktok text-4xl"></i>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-500 py-8 border-t border-gray-800">
+        <div class="container mx-auto px-4 text-center">
+            <p>&copy; 2025 Daxlea. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Dynamic Effects -->
+    <script>
+        // Smooth scroll for navigation
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Header animation on scroll
+        const header = document.getElementById('main-header');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                header.classList.remove('py-4');
+                header.classList.add('py-2', 'shadow-lg');
+            } else {
+                header.classList.remove('py-2', 'shadow-lg');
+                header.classList.add('py-4');
+            }
+        });
+    </script>
+</body>
+</html>
